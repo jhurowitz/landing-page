@@ -1,141 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-/* CSS for HTML Tags */
+/* CSS for HTML tags */
+* {
+    outline: 2px solid red;
+}
 
 body {
-    height: 100vh;
     margin: 0;
-    padding: 0; 
+    padding: 0;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    font-family: 'Roboto', sans-serif;
 }
 
-p {
-    margin: 0;
-    padding: 0;
-}
-
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-a {
-    text-decoration: none;
-    color: #f9faf8;
-}
-
-button {
-    background-color: #3882f6;
-    color: #f9faf8;
-    padding: 5px 20px;
-    border: 1px solid #3882f6;
-    border-radius: 8px;;
-}
-
-/* CSS for Specific Classes */
-
+/* CSS for specific classes */
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 150px;
-}
-
-.footer {
-    text-align: center;
-}
-
-.header, .footer {
     background-color: #1f2937;
     color: #f9faf8;
-    padding: 20px;
+    flex: 1 1 auto;
 }
 
-.header-logo {
-    font-size: 24px;
-}
-
-.header-links {
+.main-content {
+    flex: 5 1 auto;
     display: flex;
-    justify-content: space-evenly;
-    gap: 20px;
+    flex-direction: column;
 }
 
 .introduction {
     background-color: #1f2937;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    padding: 50px 100px 75px 100px;
-}
-
-.introduction-left-side {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    
-}
-
-.introduction-left-side button {
-    align-self: flex-start;
-}
-
-.main-text {
-    font-size: 48px;
-    font-weight: 900;
-    color: #f9faf8;
-}
-
-.secondary-text {
-    font-size: 18px;
-    color: #e5e7eb;
-}
-
-.introduction img {
-    flex-shrink: 0;
-}
-
-.testimonials-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
-    margin: 25px 75px;
-}
-
-.testimonials-text {
-    font-size: 36px;
-    font-weight: 900;
-    color: #1f2937;
+    flex: 1;
 }
 
 .testimonials {
-    display: flex;
-    gap: 25px;
-    flex-wrap: wrap;
-    color: rgb(109, 109, 109);
+    flex: 1;
 }
 
-.testimonial {
-    width: 175px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 15px;
+.quote {
+    background-color: #e5e7eb;
+    flex: 1;
 }
 
-.testimonial img {
-    width: 150px;
-    height: 150px;
-    align-self: center;
-    border-radius: 8px;
+.call-to-action {
+    background-color: #3882f6;
+    flex: 1;
 }
 
-.testimonial p {
-    text-align: center;
+.footer {
+    background-color: #1f2937;
+    flex: 1 1 auto;
 }
-
