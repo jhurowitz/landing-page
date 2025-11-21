@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 /* CSS for HTML tags */
-* {
-    outline: 2px solid red;
-}
-
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -44,7 +40,7 @@ button {
 .header-wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 0 150px;
+    padding: 25px 15%;
 }
 
 .header-logo {
@@ -78,20 +74,18 @@ button {
     flex: 1;
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
+    align-items: center;
     gap: 35px;
-    padding: 0 150px;
+    padding: 25px 15% 75px 15%;
 }
 
 .left-side {
     flex: 1;
     display: flex;
     flex-direction: column;
+    height: fit-content;
+    gap: 15px;
     justify-content: space-evenly;
-}
-
-.right-side {
-    flex: 1;
 }
 
 .main-text {
@@ -108,7 +102,8 @@ button {
 }
 
 .left-side button {
-    flex: 1;
+    flex-grow: 0;
+    flex-shrink: 0;
     align-self: flex-start;
     background-color: #3882f6;
     color: #f9faf8;
@@ -116,6 +111,13 @@ button {
 
 .right-side {
     flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.right-side img {
+    width: 100%;
+    max-height: 300px;
 }
 
 .testimonials-section {
@@ -130,16 +132,20 @@ button {
     flex-direction: column;
     justify-content: center;
     gap: 35px;
-    padding: 0 150px;
+    padding: 50px 15%;
 }
 
 .testimonials-header {
     align-self: center;
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 900    ;
 }
 
 .testimonials {
     display: flex;
     justify-content: space-evenly;
+    gap: 15px;
     flex-wrap: wrap;
 }
 
@@ -148,6 +154,7 @@ button {
     flex-direction: column;
     gap: 15px;
     align-items: center;
+    max-width: 225px;
 }
 
 .testimonial img {
@@ -155,10 +162,12 @@ button {
     flex-shrink: 0;
     width: 200px;
     height: 200px;
+    border-radius: 24px;
 }
 
 .testimonial-text {
     flex: 1;
+    text-align: center;
 }
 
 .quote {
@@ -173,7 +182,7 @@ button {
 .quote-wrapper {
     display: flex;
     flex-direction: column;
-    padding: 0 150px;
+    padding: 75px 15%;
 }
 
 .quote-text {
@@ -188,8 +197,47 @@ button {
 }
 
 .call-to-action {
-    background-color: #3882f6;
     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-to-action-wrapper {
+    background-color: #3882f6;
+    /* padding: 25px 50px; */
+    margin: 50px 25px;
+    display: flex;
+    width: fit-content;
+    /* gap: 75px; */
+    /* justify-content: center; */
+}
+
+.call-to-action-wrapper .left-side {
+    flex: 2;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.call-to-action-wrapper .left-side .main-text {
+    font-size: 20px;
+}
+
+.call-to-action-wrapper .left-side .secondary-text {
+    font-size: 16px;
+}
+
+.call-to-action-wrapper .right-side {
+    flex-shrink: 0;
+    align-self: center;
+}
+
+.call-to-action-wrapper .right-side button {
+    color: #f9faf8;
+    border: 1px solid #f9faf8;
+    background-color: #3882f6;
 }
 
 .footer {
@@ -199,4 +247,5 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 25px 15%;
 }
