@@ -22,7 +22,7 @@ a {
 }
 
 button {
-    font-size: 16px;
+    font-size: 12px;
     border-radius: 8px;
     padding: 8px 24px;
 }
@@ -31,7 +31,7 @@ button {
 .header {
     background-color: #1f2937;
     color: #f9faf8;
-    flex: 1 1 auto;
+    flex: 0 0 min-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,6 +39,7 @@ button {
 
 .header-wrapper {
     display: flex;
+    flex: 0 0 min-content;
     justify-content: space-between;
     padding: 25px 15%;
 }
@@ -64,7 +65,7 @@ button {
 
 .introduction {
     background-color: #1f2937;
-    flex: 1;
+    flex: 0 0 min-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -76,7 +77,7 @@ button {
     justify-content: space-between;
     align-items: center;
     gap: 35px;
-    padding: 25px 15% 75px 15%;
+    padding: 0 15% 50px 15%;
 }
 
 .left-side {
@@ -139,13 +140,14 @@ button {
     align-self: center;
     font-size: 36px;
     color: #1f2937;
-    font-weight: 900    ;
+    font-weight: 900;
 }
 
 .testimonials {
     display: flex;
-    justify-content: space-evenly;
-    gap: 15px;
+    flex: 0 0 auto;
+    justify-content: center;
+    gap: 125px;
     flex-wrap: wrap;
 }
 
@@ -154,14 +156,14 @@ button {
     flex-direction: column;
     gap: 15px;
     align-items: center;
-    max-width: 225px;
+    max-width: 100px;
 }
 
 .testimonial img {
     flex-grow: 0;
     flex-shrink: 0;
-    width: 200px;
-    height: 200px;
+    width: 125px;
+    height: 125px;
     border-radius: 24px;
 }
 
@@ -197,53 +199,57 @@ button {
 }
 
 .call-to-action {
-    flex: 1;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .call-to-action-wrapper {
+    /* Stack divs side by side (left side 2 vertically stacked and right is button */
+    /* Sign up button is center of box and left side starts left to right? */
+    /* ---> Right button just within reasonable distance from left side text */
     background-color: #3882f6;
-    /* padding: 25px 50px; */
-    margin: 50px 25px;
+    /* width: 75%; */
     display: flex;
-    width: fit-content;
-    /* gap: 75px; */
-    /* justify-content: center; */
+    justify-content: space-between;
+    flex: 0 0 auto;
+    gap: 125px;
+    padding: 25px 75px;
+    margin: 60px 100px;
+    border-radius: 8px;
 }
 
 .call-to-action-wrapper .left-side {
-    flex: 2;
-    align-self: center;
+    flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 1px;
 }
 
 .call-to-action-wrapper .left-side .main-text {
-    font-size: 20px;
+    font-size: 14px;
 }
 
 .call-to-action-wrapper .left-side .secondary-text {
-    font-size: 16px;
+    font-size: 12px;
 }
 
 .call-to-action-wrapper .right-side {
-    flex-shrink: 0;
-    align-self: center;
+    flex: 0 0 auto;
 }
 
 .call-to-action-wrapper .right-side button {
-    color: #f9faf8;
-    border: 1px solid #f9faf8;
     background-color: #3882f6;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    color: #e5e7eb;
 }
 
 .footer {
     background-color: #1f2937;
     color: #f9faf8;
-    flex: 1 1 auto;
+    flex: 0 0 min-content;
     display: flex;
     justify-content: center;
     align-items: center;
